@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/css/mypagePlus.css">
+    <title>myPage/plus</title>
+</head>
+<body>
+    <div class="container">
+        <!-- header -->
+        <div class="header">
+            <div class="logo">
+                <a href="../mainpage.html">Rolling Paper</a>
+            </div>
+            <div class="logInOut">
+                <!-- 클릭 시 첫번째 화면으로 이동해야 합니다. -->
+                <a class="logout">로그아웃</a>
+            </div>
+        </div>
+        <!-- content -->
+        <div class="contentPlus">
+            <div class="myPaperHeader">
+                <div class="owner">
+                    <!-- 임시로 하드코딩하였습니다. 추후 백에서 데이터를 받아와야 하는 부분입니다. -->
+                    <p id="nicknamePaper">(닉네임)님의 롤링페이퍼</p>
+                </div>
+                <div class="back">
+                    <!-- 화살표 클릭시 메인페이지로 돌아갑니다.` -->
+                    <a class="backArrow" href="./mypage.html">
+                        <img src="../src/image/backButton.png">
+                    </a>
+                </div>
+            </div>
+            <div class="plus">
+                <div class="plusContainer">
+                    <div class="plusHeader">
+                        <p>글 추가하기</p>
+                    </div>
+                    <!-- 백으로 보내야하는 내용: 임시로 작성만 하였습니다. -->
+                    <div id="plusContent">
+                        <div id="paperTitle">
+                            <div class="title">제목</div>
+                            <input id="title" type="text" value="저의 생일을 축하해주세요!!">
+                        </div>
+                        <div id="paperAuthor">
+                            <div class="author">작성자</div>
+                            <input id="author" type="text" value="누군가">
+                        </div>
+                        <!-- 작성날짜는 저절로 등록되거나 직접 입력 중 선택해야할 거 같습니다. -->
+                        <div id="paperDate">
+                            <div class="date">작성날짜</div>
+                            <input id="date" type="date">
+                        </div>
+                        <div id="paperContent">
+                            <div class="content">내용</div>
+                            <textarea id="content">0월 0일은 저의 생일입니다. 많이 축하해주세요!!</textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="plusButton">
+                    <a class="addContent" onclick="contentPlus();">추가하기</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

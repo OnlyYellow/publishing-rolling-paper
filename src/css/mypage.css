@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Squada+One&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Squada One" ,sans-serif;
+}
+body {
+    background-image: url('../image/background.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    position: relative;
+    margin: 100px 300px;
+    height: 760px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.container .header .logo {
+    width: 50%;
+    height: 100px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    letter-spacing: 0.1em;
+}
+.container .header .logo a {
+    width: 100%;
+    font-size: 70px;
+    text-decoration: none;
+    color: #000;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.container .header .logInOut {
+    width: 50%;
+}
+.container .header .logInOut .logout {
+    float: right;
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+    font-weight: 500;
+    width: 150px;
+    height: 50px;
+    background: #c16161;
+    color: #fff;
+    padding: 10px 30px;
+    text-align: center;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.container .header .logInOut .logout:hover {
+    background: #803838;
+}
+
+.container .myPaper {
+    width: 100%;
+    height: calc(100% - 100px);
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 1);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.container .myPaper .myPaperHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+}
+.container .myPaper .myPaperHeader .owner{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 10px;
+    align-items: center;
+    width: 50%;
+    height: 100px;
+}
+.container .myPaper .myPaperHeader .owner p {
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+.container .myPaper .myPaperHeader .back {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 100px;
+}
+.container .myPaper .myPaperHeader .back .backArrow {
+    margin-left: auto;
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+.container .myPaper .myPaperHeader .back .backArrow img {
+    width: 50px;
+    height: 50px;
+}
+.container .myPaper .theList {
+    margin: 0 200px;
+    height: calc(100% - 130px);
+    background-color: #fff;
+}
+.container .myPaper .theList .listContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 20px 0 20px;
+    height: 400px;
+    background-color: #ffe9ed;
+    overflow-y: auto;
+}
+.listContainer::-webkit-scrollbar {
+    width: 10px;
+}
+.listContainer::-webkit-scrollbar-thumb {
+    height: 100px;
+    background: rgba(255, 0, 0, 0.2);
+    border-radius: 10px;
+    background-clip: padding-box;
+    border: 2px solid transparent;
+}
+.container .myPaper .theList .listContainer .listContent {
+    display: flex;
+    flex-direction: row;
+    margin: 10px 10px 0 10px;
+    height: 80px;
+    cursor: pointer;
+}
+.container .myPaper .theList .listContainer .listContent:last-child {
+    margin-bottom: 10px;
+}
+.listContent .circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 80px;
+    z-index: 2;
+}
+.listContent .circle span {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ff7e36;
+}
+.listContent .titleDate {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    height: 80px;
+    width: 100%;
+    background-color: #fff;
+    z-index: 2;
+}
+.listContent .titleDate:hover {
+    background-color: #c5c3c3;
+}
+.listContent .titleDate .title,
+.listContent .titleDate .date {
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    height: 50%;
+}
+.theList .plusDelete {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100px;
+}
+.theList .plusDelete .plus,
+.theList .plusDelete .delete {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+.theList .plusDelete .plus .contentPlus,
+.theList .plusDelete .delete .contentDelete {
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 500;
+    width: 150px;
+    height: 50px;
+    background: #61c188;
+    color: #fff;
+    padding: 10px 30px;
+    text-align: center;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.theList .plusDelete .plus .contentPlus:hover {
+    background: #3f915f;
+}
+.theList .plusDelete .delete .contentDelete {
+    background: #ee095b;
+}
+.theList .plusDelete .delete .contentDelete:hover {
+    background: #910636;
+}
