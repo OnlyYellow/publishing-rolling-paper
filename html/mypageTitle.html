@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/css/mypageTitle.css">
+    <title>mypageTitle</title>
+</head>
+<body>
+    <div class="container">
+        <!-- header -->
+        <div class="header">
+            <div class="logo">
+                <a href="../index.html">Rolling Paper</a>
+            </div>
+            <div class="logInOut">
+                <!-- 클릭 시 첫번째 화면으로 이동해야 합니다. -->
+                <a class="logout">로그아웃</a>
+            </div>
+        </div>
+        <!-- content -->
+        <div class="commentContainer">
+            <div class="commentHeader">
+                <div class="owner">
+                    <!-- 임시로 하드코딩하였습니다. 추후 백에서 데이터를 받아와야 하는 부분입니다. -->
+                    <p id="nicknamePaper">(저의 생일을 축하해주세요!!)</p>
+                </div>
+                <div class="back">
+                    <!-- 화살표 클릭시 메인페이지로 돌아갑니다.` -->
+                    <a class="backArrow" href="./mypage.html">
+                        <img src="../src/image/backButton.png">
+                    </a>
+                </div>
+            </div>
+            <div id="comments"></div>
+        </div>
+    </div>
+    <script src="../src/js/mypageTitle.js"></script>
+</body>
