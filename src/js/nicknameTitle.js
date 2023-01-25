@@ -65,21 +65,3 @@ function overlaps(x, y) {
     }
     return false;
 }
-
-// 각 댓글을 클릭했을 때, 해당 nickname이 쓴 댓글 내용을 띄워주는 페이지로 연결되는 함수를 추가해야 합니다.
-const allComment = document.querySelectorAll("#comment");
-allComment.forEach((comment) => comment.addEventListener("click", showComment));
-
-function showComment() {
-    let nickname = "";
-    let author = document.querySelector('.nickname');
-    for (let findNickname = 0; findNickname < nicknames.length; findNickname++) {
-        if (author.innerText == nicknames[findNickname]) {
-            nickname = nicknames[findNickname];
-        }
-    }
-    // 해당 nickname이 쓴 댓글내용으로 이동하고 싶은데 그 부분 url 구현이 어떻게 되고 어떻게 연결시켜야 할지 모르겠습니다.
-    // location.href="{글 제목/댓글 쓴 사람 nickname}.html";
-    // 임시로 첫페이지로 돌아가도록 설정해놓았습니다.
-    location.href="../../index.html";
-}
