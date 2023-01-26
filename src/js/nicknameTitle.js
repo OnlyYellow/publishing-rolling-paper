@@ -65,3 +65,36 @@ function overlaps(x, y) {
     }
     return false;
 }
+
+let addComment = document.getElementById('addComment');
+let check = 0;
+
+check = checkNumofComment();
+
+// 댓글이 몇개 달렸는지 확인하는 함수
+function checkNumofComment() {
+    if (nicknames.length == 10) {
+        addComment.style.opacity = "0.5";
+        addComment.style.cursor = "default";
+        addComment.addEventListener('mouseover', function() {
+            console.log(1);
+            this.style.background = "#5094fc";
+        })
+        check = 1;
+    }
+    else {
+        check = 0;
+    }
+    return check;
+}
+
+// 댓글을 달 수 있는지 여부의 버튼
+function canPlusComment() {
+    if (check == 0) {
+        // 댓글을 다는 페이지로 연결되어야 합니다.
+        // location.href="";
+    }
+    else {
+        alert("댓글은 최대 10개까지 달 수 있습니다. 직접 마음을 전해보는 건 어떤가요??");
+    }
+}

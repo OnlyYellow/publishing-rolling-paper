@@ -138,9 +138,9 @@ body {
     color: #000;
     opacity: 1;
 }
-#comments .addComment {
+#comments #addComment {
     position: absolute;
-    bottom: 10px;
+    bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
     text-decoration: none;
@@ -157,6 +157,6 @@ body {
     cursor: pointer;
     z-index: 1000;
 }
-#comments .addComment:hover {
+#comments #addComment:hover {
     background: #1871f7;
 }
